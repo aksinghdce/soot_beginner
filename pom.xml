@@ -37,6 +37,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>ca.mcgill.sable</groupId>
+      <artifactId>soot</artifactId>
+      <version>3.1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>io.vavr</groupId>
       <artifactId>vavr</artifactId>
       <version>${vavr.version}</version>
@@ -124,6 +129,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>soot-snapshot</id>
+      <name>soot snapshots</name>
+      <url>https://soot-build.cs.uni-paderborn.de/nexus/repository/soot-snapshot/</url>
+    </repository>
+  </repositories>
 
   <build>
     <defaultGoal>clean package</defaultGoal>
